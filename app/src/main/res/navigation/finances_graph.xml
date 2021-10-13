@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/finances_graph"
+    app:startDestination="@id/stockList">
+
+    <fragment
+        android:id="@+id/stockList"
+        android:name="com.franksap2.finances.ui.stocklist.StockListFragment"
+        android:label="StockList">
+        <action
+            android:id="@+id/action_stockList_to_stockDetail"
+            app:destination="@id/stockDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/stockDetail"
+        android:name="com.franksap2.finances.ui.stockdetail.StockDetailFragment"
+        android:label="StockDetail">
+        <argument
+            android:name="stockSticker"
+            app:argType="string" />
+    </fragment>
+
+
+</navigation>

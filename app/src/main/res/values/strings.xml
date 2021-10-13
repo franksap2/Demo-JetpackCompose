@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Finances</string>
+    <string name="one_day">1D</string>
+    <string name="week">1W</string>
+    <string name="month">1M</string>
+    <string name="three_months">3M</string>
+    <string name="one_year">1Y</string>
+    <string name="five_years">5Y</string>
+    <string name="analytis_title">Analyst Ratings</string>
+    <string name="analyst_rating">\n of %d ratings</string>
+    <string name="hold">Hold</string>
+    <string name="buy">Buy</string>
+    <string name="strong_buy">Strong Buy</string>
+    <string name="strong_sell">Strong Sell</string>
+    <string name="sell">Sell</string>
+    <string name="stock_finder_hint">Stock ticker, example TSLA</string>
+    <string name="search_action">Search</string>
+    <string name="stock_info">About %s</string>
+    <string name="company_ceo">CEO</string>
+    <string name="address">Address</string>
+    <string name="google_maps_query">https://www.google.com/maps/search/?api=1&amp;query=%s</string>
+</resources>
