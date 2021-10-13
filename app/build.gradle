@@ -47,6 +47,18 @@ android {
         kotlinCompilerVersion '1.4.32'
     }
 
+    bundle {
+        language {
+            enableSplit = true
+        }
+        density {
+            enableSplit = true
+        }
+        abi {
+            enableSplit = true
+        }
+    }
+
     packagingOptions {
         exclude "META-INF/*"
     }
