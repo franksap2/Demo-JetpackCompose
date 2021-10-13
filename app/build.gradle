@@ -8,6 +8,14 @@ plugins {
 
 
 android {
+    signingConfigs {
+        release {
+            storeFile file("${project.rootDir}${File.separator}release.keystore")
+            storePassword 'composeDemo'
+            keyAlias 'financeDemo'
+            keyPassword 'composeDemo'
+        }
+    }
     compileSdk 30
     buildToolsVersion "30.0.3"
 
@@ -25,9 +33,14 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
+            applicationIdSuffix '.debug'
             minifyEnabled false
+        }
+        release {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {
